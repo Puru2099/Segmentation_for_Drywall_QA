@@ -34,10 +34,10 @@ The final deliverable is an **interactive web application** that allows users to
 
 ## ⚙️ Features
 
-- **🖥️ Interactive Web UI:** Built with React + TypeScript for easy image upload and interaction.  
-- **⚡ High-Performance Backend:** Flask (Python) backend serving the fine-tuned SAM 2.1 model for fast inference.  
-- **🎯 Point-Prompted Segmentation:** Leverages SAM 2.1 to generate precise masks from simple point grids.  
-- **🔁 Comprehensive Data Pipeline:** Includes scripts for converting COCO annotations and performing extensive offline data augmentation.  
+- ** Interactive Web UI:** Built with React + TypeScript for easy image upload and interaction.  
+- ** High-Performance Backend:** Flask (Python) backend serving the fine-tuned SAM 2.1 model for fast inference.  
+- ** Point-Prompted Segmentation:** Leverages SAM 2.1 to generate precise masks from simple point grids.  
+- ** Comprehensive Data Pipeline:** Includes scripts for converting COCO annotations and performing extensive offline data augmentation.  
 - ** Multi-Model Experimentation:** Explores five different architectures, with the best-performing one selected for deployment.  
 
 ---
