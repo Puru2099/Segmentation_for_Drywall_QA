@@ -1,4 +1,4 @@
-# 🧱 Prompted Segmentation for Drywall Quality Assurance
+#  Prompted Segmentation for Drywall Quality Assurance
 
 This repository contains the code and models for a project focused on **automated quality assurance of drywall**.  
 The primary goal is to **segment two key features** from images:
@@ -9,7 +9,7 @@ The project includes data preparation scripts, multiple model training experimen
 
 ---
 
-## 📚 Table of Contents
+##  Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Final Model Performance](#final-model-performance)
@@ -20,7 +20,7 @@ The project includes data preparation scripts, multiple model training experimen
 
 ---
 
-## 🧩 Project Overview
+##  Project Overview
 
 The core of this project is a **machine learning pipeline** that takes an image of drywall as input and produces a **binary mask** highlighting defects (cracks) or features (taping).  
 This is achieved by **fine-tuning a state-of-the-art segmentation model** on a custom, augmented dataset.
@@ -38,11 +38,11 @@ The final deliverable is an **interactive web application** that allows users to
 - **⚡ High-Performance Backend:** Flask (Python) backend serving the fine-tuned SAM 2.1 model for fast inference.  
 - **🎯 Point-Prompted Segmentation:** Leverages SAM 2.1 to generate precise masks from simple point grids.  
 - **🔁 Comprehensive Data Pipeline:** Includes scripts for converting COCO annotations and performing extensive offline data augmentation.  
-- **🧪 Multi-Model Experimentation:** Explores five different architectures, with the best-performing one selected for deployment.  
+- ** Multi-Model Experimentation:** Explores five different architectures, with the best-performing one selected for deployment.  
 
 ---
 
-## 📈 Final Model Performance
+##  Final Model Performance
 
 The deployed model is a **fine-tuned SAM 2.1 (Hiera Tiny)** version.  
 It was selected after a comparative analysis of five approaches.
@@ -54,7 +54,7 @@ It was selected after a comparative analysis of five approaches.
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 
@@ -92,7 +92,7 @@ It was selected after a comparative analysis of five approaches.
 
 ---
 
-### 1️⃣ Backend Setup
+### 1️ Backend Setup
 
 Set up the Python backend server:
 
@@ -127,7 +127,7 @@ npm install
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### 1. Start the Backend Server
 
@@ -150,7 +150,7 @@ Frontend runs at: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-### 🧠 How to Use the App
+### How to Use the App
 
 1. **Upload an Image:** Click or drag a drywall image into the upload area.
 2. **Provide a Prompt:** The app automatically generates a point grid—just click **"Generate Mask"**.
@@ -158,7 +158,7 @@ Frontend runs at: **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🧪 Model Development and Experiments
+##  Model Development and Experiments
 
 This project involved a comprehensive investigation into optimal model architectures.
 The dataset was formed by combining **two Roboflow datasets**:
@@ -184,32 +184,3 @@ After augmentation, the total dataset contained **~18.5k images**.
 > Therefore, the **robust and high-performing SAM 2.1 model (Approach 2)** was chosen for deployment.
 
 ---
-
-## 🧑‍💻 Authors & Credits
-
-Developed as part of a **machine learning research project** on **drywall defect segmentation**.
-Built using:
-
-* [Segment Anything Model 2.1 (Meta)](https://ai.facebook.com/research/publications/segment-anything/)
-* [Flask](https://flask.palletsprojects.com/)
-* [React](https://react.dev/)
-
----
-
-## 🪪 License
-
-This project is licensed under the **MIT License**.
-See the [LICENSE](LICENSE) file for more details.
-
----
-
-```
-
----
-
-Would you like me to:
-- add **badges** (e.g., Python version, license, model architecture, etc.), or  
-- include **image placeholders** (for demo screenshots or architecture diagrams)?  
-
-That would make it look more professional for GitHub or portfolio presentation.
-```
