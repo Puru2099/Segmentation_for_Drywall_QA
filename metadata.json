@@ -1,0 +1,5 @@
+
+{
+  "name": "Drywall QA Segmentation",
+  "description": "An application to perform prompted segmentation on drywall images to identify cracks and taping areas using a text-conditioned segmentation model powered by the Gemini API."
+}
