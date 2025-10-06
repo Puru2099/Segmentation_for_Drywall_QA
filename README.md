@@ -32,7 +32,7 @@ The final deliverable is an **interactive web application** that allows users to
 
 ---
 
-## ⚙️ Features
+##  Features
 
 - ** Interactive Web UI:** Built with React + TypeScript for easy image upload and interaction.  
 - ** High-Performance Backend:** Flask (Python) backend serving the fine-tuned SAM 2.1 model for fast inference.  
@@ -114,7 +114,7 @@ pip install -r requirements.txt
 
 ---
 
-### 2️⃣ Frontend Setup
+### 2️ Frontend Setup
 
 From the project root:
 
@@ -170,7 +170,7 @@ After augmentation, the total dataset contained **~18.5k images**.
 
 ---
 
-### 🧮 Model Comparison
+###  Model Comparison
 
 | Approach | Model                   | Prompting       | Final mIoU | Final Dice |
 | -------- | ----------------------- | --------------- | ---------- | ---------- |
@@ -180,7 +180,7 @@ After augmentation, the total dataset contained **~18.5k images**.
 | 4        | SegFormer B2            | None (Semantic) | 0.6591     | 0.7706     |
 | 5        | YOLOE-L                 | None (Semantic) | 0.5351     | 0.6683     |
 
-> ⚠️ While **Approach 3** achieved the highest validation metrics, its model weights were lost.
+>  While **Approach 3** achieved the highest validation metrics, its model weights were lost.
 > Therefore, the **robust and high-performing SAM 2.1 model (Approach 2)** was chosen for deployment.
 
 ---
