@@ -39,7 +39,7 @@ def load_model():
     predictor.model.eval()
     return predictor
 
-def predict_mask(predictor, img_np, prompt, thr=0.5, n_points=9):
+def predict_mask(predictor, img_np, prompt, thr=0.95, n_points=9):
     """Generates a segmentation mask for the given image and prompt."""
     ih, iw = img_np.shape[:2]
     img_r = cv2.resize(img_np, (IMG_SIZE, IMG_SIZE), interpolation=cv2.INTER_LINEAR)
